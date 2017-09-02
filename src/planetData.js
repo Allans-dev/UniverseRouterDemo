@@ -1,4 +1,4 @@
-{
+export const planetJsonData = {
    " EPIC 22881391 b": {
       "mass": "0.7",
       "radius": "0.079",

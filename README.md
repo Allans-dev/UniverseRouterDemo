@@ -1,4 +1,4 @@
-PlanetShare
+Real Universe
 
 Realestate services website for planets. Project for nod.money Front-end developer application.
 

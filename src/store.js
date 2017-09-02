@@ -1,18 +1,15 @@
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './reducers';
-import planetData from '../planetData';
-import thunk from 'redux-thunk';
-
-console.log(planetData);
+import thunkMiddleware from 'redux-thunk';
+import { planetJsonData } from './planetData.js';
 
 const initialState = {};
 
-export default configureStore => (
+export default initialState => (
   createStore(
-    initialState,
     rootReducer,
     applyMiddleware(
-      thunk
+      thunkMiddleware
     )
   )
 );
