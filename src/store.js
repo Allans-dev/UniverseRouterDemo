@@ -6,10 +6,10 @@ import { planetJsonData } from './planetData.js';
 const initialState = {};
 
 export default initialState => (
-  createStore(
-    rootReducer,
-    applyMiddleware(
-      thunkMiddleware
+    createStore(
+        rootReducer,
+        applyMiddleware(
+            thunkMiddleware
+        )
     )
-  )
 );

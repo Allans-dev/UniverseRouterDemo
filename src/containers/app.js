@@ -8,20 +8,20 @@ import Title from '../components/title.js';
 
 
 class App extends Component {
-  componentWillMount(){
-    this.props.importPlanetData(planetJsonData);
-  }
-  render() {
-    return(
-      <div>
-        <Title />
-      </div>
-    )
-  }
+    componentWillMount(){
+        this.props.importPlanetData(planetJsonData);
+    }
+    render() {
+        return(
+            <div>
+                <Title />
+            </div>
+        )
+    }
 }
 
 function mapDispatchToProps(dispatch, ownProps) {
-  return bindActionCreators({ importPlanetData }, dispatch);
+    return bindActionCreators({ importPlanetData }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(App);

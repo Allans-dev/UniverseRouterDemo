@@ -8,11 +8,11 @@ import App from './containers/app.js';
 const store = configureStore();
 
 store.subscribe(() => {
-  console.log('index: ', store.getState());
+    console.log('index: ', store.getState());
 });
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
-  , document.querySelector('.container'));
+    <Provider store={store}>
+        <App />
+    </Provider>
+        , document.querySelector('.container'));
