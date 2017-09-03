@@ -1,0 +1,100 @@
+/*-------------------------
+GLOBAL
+-------------------------*/
+/** {
+  border: 2px solid black;
+}*/
+
+body {
+    color: #c4c4c4;
+    background-color: black;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*-------------------------
+TITLE
+-------------------------*/
+
+.title {
+    height: 98vh;
+    width: 100%;
+    background-image: url(../imgs/sun-earth-shadow.jpg);
+    background-size: cover;
+}
+
+.tagline {
+    letter-spacing: 2px;
+    font-size: 260%;
+    font-weight: 300;
+    display: block;
+    margin-top: 270px;
+    text-align: center;
+    
+}
+
+/*-------NAVBAR----------*/
+
+.navbar {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.text-icon {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 120%;
+    display: inline-block;
+    width: 20%;
+}
+
+.main-nav {
+    display: inline-block;
+    margin: 20px auto;
+    list-style: none;
+    text-align: right;
+    width: 70%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.main-nav li:first-of-type {
+    margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #eee;
+}
+

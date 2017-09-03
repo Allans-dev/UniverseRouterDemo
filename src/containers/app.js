@@ -4,6 +4,8 @@ import { importPlanetData } from '../actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import Title from '../components/title.js';
+
 
 class App extends Component {
   componentWillMount(){
@@ -12,8 +14,7 @@ class App extends Component {
   render() {
     return(
       <div>
-        RealUniverse
-        Find your place in the stars...
+        <Title />
       </div>
     )
   }
