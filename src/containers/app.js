@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import Title from '../components/title.js';
-import Footer from '../components/footer.js';
-import Navbar from '../components/navbar.js';
 
 
 class App extends Component {
@@ -15,12 +13,8 @@ class App extends Component {
     }
     render() {
         return(
-            <div className="app">
-                <div className="row">
-                    <Navbar />
-                    <Title />
-                    <Footer />
-                </div>
+            <div>
+                <Title />
             </div>
         )
     }

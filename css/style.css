@@ -39,19 +39,15 @@ a:active {
     color: inherit;
 }
 
-.app {
-
-}
-
 /*-------------------------
 TITLE
 -------------------------*/
 
 .title {
-    background-image: url(../imgs/sun-earth-shadow.jpg);
-    background-size: 100% 100%; 
     height: 98vh;
     width: 100%;
+    background-image: url(../imgs/sun-earth-shadow.jpg);
+    background-size: 100% 100%;
 }
 
 .tagline {
