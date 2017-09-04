@@ -4,7 +4,9 @@ import { importPlanetData } from '../actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import Navbar from '../components/navbar.js';
 import Title from '../components/title.js';
+import Footer from '../components/footer.js';
 
 
 class App extends Component {
@@ -14,7 +16,9 @@ class App extends Component {
     render() {
         return(
             <div>
+                <Navbar />
                 <Title />
+                <Footer />
             </div>
         );
     }

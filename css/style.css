@@ -64,7 +64,7 @@ TITLE
     font-size: 260%;
     font-weight: 300;
     display: block;
-    margin-top: 220px;
+    padding-top: 250px;
     text-align: center;
 }
 
@@ -72,19 +72,21 @@ TITLE
 
 .navbar {
     display: block;
-    position: relative;
-    margin: 0 auto;
+    position: absolute;
+    width: 100%;
 }
 
 .text-icon {
     margin-top: 20px;
     padding-left: 20px;
     font-size: 120%;
+    position: relative;
     display: inline-block;
     width: 20%;
 }
 
 .main-nav {
+    position: relative;
     display: inline-block;
     margin: 20px auto;
     list-style: none;
