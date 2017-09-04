@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 
+import { planetJsonData } from '../planetData.js';
+import { importPlanetData } from '../actions';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
 class SearchBar extends Component {
+    
+    componentWillMount(){
+        this.props.importPlanetData(planetJsonData);
+    }
+    
     constructor(props) {
         super(props);
         this.state = { term: '' };
@@ -34,4 +44,8 @@ class SearchBar extends Component {
     }
 }
 
-export default SearchBar;
+function mapDispatchToProps(dispatch, ownProps) {
+    return bindActionCreators({ importPlanetData }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(SearchBar);

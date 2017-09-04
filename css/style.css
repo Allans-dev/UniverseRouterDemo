@@ -224,10 +224,8 @@ FOOTER
 .downloadApp img {
     width: auto;
     height: 60px;
-}
-
-.downloadApp img:first-of-type {
-    margin-right: 40px;
+    opacity: 0.7;
+    margin: 0 20px;
 }
 
 .footer-nav,
