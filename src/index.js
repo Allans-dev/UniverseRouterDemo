@@ -6,7 +6,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/navbar.js';
 import Title from './components/title.js';
+import BrowseNeighbours from './components/browseNeighbours.js';
+import BrowseRegion from './components/browseRegion.js';
+import BrowseAll from './components/browseAll.js';
 import Footer from './components/footer.js';
+
 
 
 const store = configureStore();
@@ -21,7 +25,10 @@ ReactDOM.render(
             <div>
                 <Navbar />
                 <Switch>
-                  <Route path="/" component={Title} />
+                    <Route path="/all" component={BrowseAll} />
+                    <Route path="/region" component={BrowseRegion} />
+                    <Route path="/neighbours" component={BrowseNeighbours} />
+                    <Route path="/" component={Title} />
                 </Switch>
                 <Footer />
             </div>

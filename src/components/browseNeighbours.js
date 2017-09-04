@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BrowseRegion = () => {
+const BrowseNeighbours = () => {
     return (
         <div></div>
     );
 }
 
-export default BrowseRegion;
+export default BrowseNeighbours;

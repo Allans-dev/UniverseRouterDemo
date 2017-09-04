@@ -197,6 +197,7 @@ HOME MENU
     text-align: center;
     background-color: #473E6E;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .homeMenu div img {
