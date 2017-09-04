@@ -215,6 +215,21 @@ FOOTER
     color: #848484;
 }
 
+.downloadApp {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.downloadApp img {
+    width: auto;
+    height: 60px;
+}
+
+.downloadApp img:first-of-type {
+    margin-right: 40px;
+}
+
 .footer-nav,
 .footer-social {
     position: relative;

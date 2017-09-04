@@ -5,6 +5,11 @@ const Footer = () => {
         <div className="footer">
             <div className="row">
                 
+                <div className="downloadApp">
+                    <a target="_blank" href="#"><img alt="playstore" src="../../imgs/google-play-badge.png" /></a>
+                    <a target="_blank" href="#"><img alt="appstore" src="../../imgs/appleDL.svg" /></a>
+                </div>  
+                
                 <div className="footer-social">
                     <ul>
                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
@@ -12,7 +17,6 @@ const Footer = () => {
                         <li><a href="#"><i className="fa fa-instagram"></i></a></li>
                         <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
                         <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                        
                     </ul>
                 </div>
                 <div className="footer-nav">
