@@ -20,7 +20,7 @@ class App extends Component {
                 <Title />
                 <Footer />
             </div>
-        );
+        )
     }
 }
 
