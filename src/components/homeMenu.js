@@ -9,18 +9,24 @@ class HomeMenu extends Component {
         return (
             <div className="homeMenu">
                 <Link to="/neighbors">
-                    <img alt="earth-and-moon-icon" src="imgs/earth-and-moon.png"></img> 
-                    Neighborhood<br/>
-                    (less than 50 parsecs)
+                    <div>
+                        <img alt="earth-and-moon-icon" src="imgs/earth-and-moon.png"></img> 
+                        Neighborhood<br/>
+                        (less than 50 parsecs)
+                    </div>
                 </Link>
                 <Link to="/region">
-                    <img alt="solar-system-icon" src="imgs/solar-system.png"></img> 
-                    Regional<br/>
-                    (less than 200 parsecs)
+                    <div>
+                        <img alt="solar-system-icon" src="imgs/solar-system.png"></img> 
+                        Regional<br/>
+                        (less than 200 parsecs)
+                    </div>
                 </Link>
                 <Link to="/all">
-                    <img alt="galaxy-icon" src="imgs/galaxy-view.png"></img> 
-                    All
+                    <div>
+                        <img alt="galaxy-icon" src="imgs/galaxy-view.png"></img> 
+                        All
+                    </div>
                 </Link>
             </div>
         );
