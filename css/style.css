@@ -13,6 +13,7 @@ GLOBAL
     light blue #2972FF
     purple #473E6E
     text white #c4c4c4
+    unobtrusive grey #848484;
 */
 
 body {
@@ -66,14 +67,19 @@ TITLE
     display: block;
     padding-top: 250px;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
 
-/*-------NAVBAR----------*/
+/*-------------------------
+NAVBAR
+--------------------------*/
 
 .navbar {
     display: block;
     position: absolute;
     width: 100%;
+    z-index: 100;
 }
 
 .text-icon {
@@ -143,7 +149,9 @@ TITLE
     background-color: #2972FF;
 }
 
-/*--------SEARCH BAR----------*/
+/*-------------------------
+SEARCH BAR
+--------------------------*/
 
 .searchBar {
     margin-top: 30px;
@@ -171,7 +179,9 @@ TITLE
     background-color: #2972FF;
 }
 
-/*--------HOME MENU------------*/
+/*-----------------------------
+HOME MENU
+-------------------------------*/
 
 .homeMenu {
     display: flex;
@@ -194,7 +204,58 @@ TITLE
     height: 100px;
     width: 100px;
     display: block;
-    
+}
+
+/*---------------------------
+FOOTER
+---------------------------*/
+
+.footer {
+    width: 100%;
+    color: #848484;
+}
+
+.footer-nav,
+.footer-social {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+}
+
+.footer-nav li, 
+.footer-social li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-social {
+    width: 40%;
+    text-align: left;
+}
+
+.footer-nav {
+    width: 60%;
+    text-align: right;
+}
+
+.footer-nav li:hover {
+    color: #c4c4c4;
+}
+
+.footer-social li .fa-facebook:hover { color: #3b5998; }
+
+.footer-social li .fa-twitter:hover { color: #00aced; }
+
+.footer-social li .fa-instagram:hover { color: #bc2a8d; }
+
+.footer-social li .fa-linkedin:hover { color: #0e76a8; }
+
+.footer-social li .fa-google-plus:hover { color: #dd4b39; }
+
+.footer-notes {
+    font-size: 70%;
+    width: 100%;
+    text-align: center;
 }
 
 
