@@ -2,27 +2,36 @@
 GLOBAL
 -------------------------*/
 /** {
-  border: 2px solid black;
+  border: 2px solid white;
 }*/
 
-/* Blue #163d88 
-    light blue #225FD4
+/* 
+    Colors
+
+    dark Blue #163d88 
+    blue #225FD4
+    light blue #2972FF
+    purple #473E6E
     text white #c4c4c4
 */
 
-
 body {
     color: #c4c4c4;
-    background-image: url(../imgs/sun-earth-shadow.jpg);
-    background-size: 100% 100%;
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
 }
 
 .row {
     max-width: 1140px;
     margin: 0 auto;
     position: relative;
-    font-family: 'Lato', sans-serif;
+}
+
+button {
+    border: 1px solid transparent;
+    color: inherit;
+    cursor: pointer;
 }
 
 a,
@@ -55,34 +64,8 @@ TITLE
     font-size: 260%;
     font-weight: 300;
     display: block;
-}
-
-.searchBar {
-    margin-top: 30px;
+    padding-top: 250px;
     text-align: center;
-    font-size: 100%;
-}
-
-.searchBar input {
-    font-size: 100%;
-    margin-right: 10px;
-    width: 30%;
-}
-
-.searchBar button {
-    font-size: 100%;
-    cursor: pointer;
-    color: inherit;
-    background-color: #163d88;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    padding: 5px;
-    -webkit-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-}
-
-.searchBar button:hover {
-    background-color: #225FD4;
 }
 
 /*-------NAVBAR----------*/
@@ -134,10 +117,8 @@ TITLE
 }
 
 .main-nav button {
-    color: inherit;
     font-family: inherit;
     font-size: 100%;
-    cursor: pointer;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     border-radius: 4px;
@@ -145,8 +126,7 @@ TITLE
 
 .logIn,
 .logIn:link,
-.logIn:visited {
-    border: 1px solid transparent;
+.logIn:visited { 
     background-color: transparent;
 }
 
@@ -156,10 +136,65 @@ TITLE
 }
 
 .signUp {
-    background-color: #163d88;
-    border: 1px solid transparent;
+    background-color: #225FD4;
 }
 
 .signUp:hover {
-    background-color: #225FD4;
+    background-color: #2972FF;
 }
+
+/*--------SEARCH BAR----------*/
+
+.searchBar {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 100%;
+}
+
+.searchBar input {
+    font-size: 100%;
+    margin-right: 10px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.searchBar button {
+    font-size: 100%;
+    background-color: #225FD4;
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.searchBar button:hover {
+    background-color: #2972FF;
+}
+
+/*--------HOME MENU------------*/
+
+.homeMenu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.homeMenu div {
+    margin: 100px 30px 20px;
+    width: 180px;
+    height: 180px;
+    display: block;
+    text-align: center;
+    background-color: #473E6E;
+    border-radius: 15px;
+}
+
+.homeMenu div img {
+    margin: 10px auto;
+    height: 100px;
+    width: 100px;
+    display: block;
+    
+}
+
+
