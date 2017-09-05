@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { importNeighbourData, importRegionData, importAllData } from '../actions';
@@ -16,15 +15,15 @@ class HomeMenu extends Component {
     
     handleClick50(e) {
         console.log('click called');
-        importNeighbourData(this.props.planets);
+        this.props.importNeighbourData(this.props.planets);
     }
     
     handleClick200(e) {
-        importRegionData(this.props.planets);
+        this.props.importRegionData(this.props.planets);
     }
     
     handleClickAll(e) {
-        importAllData(this.props.planets);
+        this.props.importAllData(this.props.planets);
     }
     
     render(){
@@ -56,7 +55,7 @@ class HomeMenu extends Component {
 }
 
 function mapStateToProps({ planets }, ownProps) {
-    return { planets }
+    return { planets };
 }
 
 function mapDispatchToProps(dispatch, ownProps) {

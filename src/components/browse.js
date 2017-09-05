@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-const Browse = () => {
-    return (
-        <div>Display</div>
-    );
+class Browse extends Component {
+    render() {
+        return(
+            <div>Display</div>
+        );
+    }
 }
 
-export default Browse;
+
+function mapStateToProps({ planets }, ownProps) {
+    return { planets };
+}
+
+export default connect(mapStateToProps)(Browse);

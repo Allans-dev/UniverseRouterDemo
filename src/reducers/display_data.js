@@ -6,14 +6,14 @@ import _ from 'lodash';
 
 
 const displayData = (state = {}, action) => {
-    console.log("reducer called!")
+    console.log("reducer called!");
     switch (action.type) {
         case 'GATHER_NEIGHBOURS':
             console.log("reducer working!");
 //            let neighbours = _.mapkeys(action.payload, (value, keys) => {
 //                                       return keys;
 //                                       });
-            return { display: 'neighbours' };
+            return { displayData: 'neighbours' };
         case 'GATHER_REGION':
             return {};
         case 'GATHER_ALL':
