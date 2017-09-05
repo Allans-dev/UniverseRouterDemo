@@ -8,11 +8,12 @@ export function importPlanetData (data) {
   };
 }
 
-export const GATHER_NEIGHBORS = "GATHER_NEIGHBOURS";
+export const GATHER_NEIGHBOURS = "GATHER_NEIGHBOURS";
 
 export function importNeighbourData (data) {
+    console.log('action working');
     return {
-        type: GATHER_NEIGHBORS,
+        type: GATHER_NEIGHBOURS,
         payload: data
     };
 }

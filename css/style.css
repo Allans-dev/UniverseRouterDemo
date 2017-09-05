@@ -190,7 +190,7 @@ HOME MENU
 }
 
 .homeMenu div {
-    margin: 100px 30px 20px;
+    margin: 100px 30px 40px;
     width: 180px;
     height: 180px;
     display: block;
@@ -272,4 +272,11 @@ FOOTER
     text-align: center;
 }
 
+/*-------------------------
+BROWSE
+-------------------------*/
 
+.browse {
+    width: 100%;
+    height: 400px;
+}

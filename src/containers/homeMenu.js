@@ -1,35 +1,55 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { importNeighbourData, importRegionData, importAllData } from '../actions';
 
 
 class HomeMenu extends Component {
+    constructor(props){
+        super(props);
+        this.handleClick50 =this.handleClick50.bind(this);
+        this.handleClick200 =this.handleClick200.bind(this);
+        this.handleClickAll =this.handleClickAll.bind(this);
+    }
+    
+    handleClick50(e) {
+        console.log('click called');
+        importNeighbourData(this.props.planets);
+    }
+    
+    handleClick200(e) {
+        importRegionData(this.props.planets);
+    }
+    
+    handleClickAll(e) {
+        importAllData(this.props.planets);
+    }
     
     render(){
         return (
             <div className="homeMenu">
-                <Link to="/neighbours" onClick={this.props.importNeighbourData}>
-                    <div>
+                <div>
+                    <Link to="/browse" onClick={this.handleClick50}>
                         <img alt="earth-and-moon-icon" src="imgs/earth-and-moon.png"></img> 
-                        Neighborhood<br/>
+                        Neighbourhood<br/>
                         (less than 50 parsecs)
-                    </div>
-                </Link>
-                <Link to="/region" onClick={this.props.importRegionData}>
-                    <div>
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/browse" onClick={this.handleClick200}>
                         <img alt="solar-system-icon" src="imgs/solar-system.png"></img> 
                         Regional<br/>
                         (less than 200 parsecs)
-                    </div>
-                </Link>
-                <Link to="/all" onClick={this.props.importAllData}>
-                    <div>
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/browse" onClick={this.props.handleClickAll}>
                         <img alt="galaxy-icon" src="imgs/galaxy-view.png"></img> 
                         All
-                    </div>
-                </Link>
+                    </Link>
+                </div>
             </div>
         );
     }
