@@ -1,24 +1,12 @@
-import GATHER_NEIGHBOURS from '../actions';
-import GATHER_REGION from '../actions';
-import GATHER_ALL from '../actions';
-
-import _ from 'lodash';
-
+import UPDATE_DISPLAY from '../actions';
 
 const displayData = (state = {}, action) => {
     console.log("reducer called!");
     switch (action.type) {
-        case 'GATHER_NEIGHBOURS':
-            console.log("reducer working!");
-//            let neighbours = _.mapkeys(action.payload, (value, keys) => {
-//                                       return keys;
-//                                       });
-            return { displayData: 'neighbours' };
-        case 'GATHER_REGION':
-            return {};
-        case 'GATHER_ALL':
-            return {};
-  }
+        case 'UPDATE_DISPLAY':
+            console.log("N reducer working!");
+            return { displayData: action.payload };
+    }
   return state;
 };
 

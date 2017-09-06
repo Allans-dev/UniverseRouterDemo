@@ -6,7 +6,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/navbar.js';
 import Title from './components/title.js';
-import Browse from './components/browse.js';
+import BrowseAll from './containers/browseAll.js';
+import BrowseNeighbours from './containers/browseNeighbours.js';
+import BrowseRegion from './containers/browseRegion.js';
 import Footer from './components/footer.js';
 
 
@@ -23,7 +25,9 @@ ReactDOM.render(
             <div>
                 <Navbar />
                 <Switch>
-                    <Route path="/browse" component={Browse} />
+                    <Route path="/browseNeighbours" component={BrowseNeighbours} />
+                    <Route path="/browseRegion" component={BrowseRegion} />
+                    <Route path="/browseAll" component={BrowseAll} />
                     <Route path="/" component={Title} />
                 </Switch>
                 <Footer />

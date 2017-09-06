@@ -8,30 +8,12 @@ export function importPlanetData (data) {
   };
 }
 
-export const GATHER_NEIGHBOURS = "GATHER_NEIGHBOURS";
+export const UPDATE_DISPLAY = "UPDATE_DISPLAY";
 
-export function importNeighbourData (data) {
+export function importDisplayData (data) {
     console.log('action working');
     return {
-        type: GATHER_NEIGHBOURS,
-        payload: data
-    };
-}
-
-export const GATHER_REGION = "GATHER_REGION";
-
-export function importRegionData (data) {
-    return {
-        type: GATHER_REGION,
-        payload: data
-    };
-}
-
-export const GATHER_ALL = "GATHER_ALL";
-
-export function importAllData (data) {
-    return {
-        type: GATHER_ALL,
+        type: UPDATE_DISPLAY,
         payload: data
     };
 }
