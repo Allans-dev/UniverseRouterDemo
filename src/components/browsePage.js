@@ -9,7 +9,7 @@ const browsePage = (props) => {
                 <div className="browseDisplay">
                     <div className="topBar">
                         <span className="left">{props.number} planets available</span>
-                        <Link to="/"><span className="right">Back</span></Link>
+                        <span className="right"><Link to="/">Back</Link></span>
                     </div>
                     <PlanetDetails data={props.data} />
                 </div>

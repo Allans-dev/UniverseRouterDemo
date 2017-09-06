@@ -8,7 +8,7 @@ const Navbar = () => {
                 <Link to="/"><p className="text-icon" >realuniverse.com</p></Link>
                 <ul className="main-nav">
                     <li><a href="#">Buy</a></li>
-                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Rent</a></li>
                     <li><a href="#">New Planets</a></li>
                     <li><button className="signUp">Sign up</button></li>
                     <li><button className="logIn">Log in</button></li>

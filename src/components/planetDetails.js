@@ -17,9 +17,19 @@ const PlanetDetails = (props) => {
     function details (value, key, obj) {
         return (
             <div key={value} className="planetDetails">
-                <div>Name {value}</div>
-                <figure>{randomImage()}</figure>
-                <div>{props.data[value].mass}</div>
+                <div className="name left">{value}</div>
+                <div className="price right">{props.data[value].mass * 7375} billion Bitcoins</div>
+                <div className="left">
+                    <figure>{randomImage()}</figure>
+                </div>
+                <div className="right">
+                    <button className="buyBtn">BUY</button><button className="rentBtn">RENT</button>
+                    <div className="mass">Mass: {props.data[value].mass} Jupiters</div>
+                    <div className="radius">Radius: {props.data[value].radius}</div>
+                    <div className="axis">Axis-tilt: {props.data[value].semi_major_axis}</div>
+                    <div className="year">Length of year: {props.data[value].orbital_period} Earth Days</div>
+                    <div className="discovery">Year of Discovery: {props.data[value].discovered}</div>
+                </div>
             </div>
         );
     }
