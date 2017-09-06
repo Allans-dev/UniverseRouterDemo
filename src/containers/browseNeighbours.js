@@ -8,16 +8,23 @@ import _ from 'lodash';
 import BrowsePage from '../components/browsePage.js';
 
 class BrowseNeighbours extends Component {
-//    componentWillMount(){
-////            const neighbours = _.mapkeys(action.payload.list, (function (value, key) {
-////                        console.log(action.payload.list);
-////                        return key;  
-////                    }));
-//    }
+    
+    componentWillMount(){
+        
+        const neighbours = _.omitBy(this.props.planets.list, function (value, key){
+            if (value.star_distance > 50 ) {
+                return value;
+            }
+        });
+        
+        this.props.importDisplayData(neighbours);
+    }
     
     render() {
+        let arr = _.keys(this.props.displayData.list);
+        let numberOfPlanets = arr.length;
         return(
-            <BrowsePage />
+            <BrowsePage data={this.props.displayData.list} number={numberOfPlanets}/>
         );
     }
 }
