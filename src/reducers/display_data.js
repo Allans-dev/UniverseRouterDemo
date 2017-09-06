@@ -5,7 +5,7 @@ const displayData = (state = {}, action) => {
     switch (action.type) {
         case 'UPDATE_DISPLAY':
             console.log("reducer working!");
-            return { displayData: action.payload };
+            return { list: action.payload };
     }
   return state;
 };

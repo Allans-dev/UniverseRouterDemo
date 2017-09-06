@@ -32,7 +32,7 @@ class SearchBar extends Component {
             <div className="searchBar">
                 <form onSubmit={this.onFormSubmit}>
                     <input 
-                        placeholder="Search from 132 available planets"
+                        placeholder="Search from 131 available planets"
                         value={this.state.term}
                         onChange={this.onInputChange}
                     />
