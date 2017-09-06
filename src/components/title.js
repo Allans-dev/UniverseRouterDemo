@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from '../containers/searchBar.js';
-import HomeMenu from '../containers/homeMenu.js';
+import HomeMenu from './homeMenu.js';
 
 const Title = () => {
     return (

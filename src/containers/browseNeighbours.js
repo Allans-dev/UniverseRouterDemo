@@ -5,6 +5,8 @@ import { bindActionCreators } from 'redux';
 import { importDisplayData } from '../actions';
 import _ from 'lodash';
 
+import BrowsePage from '../components/browsePage.js';
+
 class BrowseNeighbours extends Component {
 //    componentWillMount(){
 ////            const neighbours = _.mapkeys(action.payload.list, (function (value, key) {
@@ -15,14 +17,14 @@ class BrowseNeighbours extends Component {
     
     render() {
         return(
-            <div>Display Neighbours</div>
+            <BrowsePage />
         );
     }
 }
 
 
-function mapStateToProps({ planets }, ownProps) {
-    return { planets };
+function mapStateToProps({ planets, displayData }, ownProps) {
+    return { planets, displayData };
 }
 
 function mapDispatchToProps(dispatch, ownProps) {

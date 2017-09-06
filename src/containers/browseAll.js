@@ -5,21 +5,23 @@ import { bindActionCreators } from 'redux';
 import { importDisplayData } from '../actions';
 import _ from 'lodash';
 
+import BrowsePage from '../components/browsePage.js';
+
 class BrowseAll extends Component {
-//    componentWillMount(){
-//        
-//    }
+    componentWillMount(){
+        this.props.importDisplayData(this.props.planets.list);
+    }
     
     render() {
         return(
-            <div>Display All</div>
+            <BrowsePage data={this.props.displayData} />
         );
     }
 }
 
 
-function mapStateToProps({ planets }, ownProps) {
-    return { planets };
+function mapStateToProps({ planets, displayData }, ownProps) {
+    return { planets, displayData };
 }
 
 function mapDispatchToProps(dispatch, ownProps) {

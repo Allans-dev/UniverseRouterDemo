@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 
                 <div className="footer-notes">
-                    Space icons by Freepik.com.
+                    Space icons and background by <a target="_blank" href="www.freepik.com">Freepik.com.</a>
                     Website created by Allan Cheung.
                 </div>
                 
