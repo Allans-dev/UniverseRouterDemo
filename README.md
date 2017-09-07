@@ -1,4 +1,6 @@
-Real Universe
+Real Universe 
+
+Only the purple buttons work.
 
 Realestate services website for planets. Project for nod.money Front-end developer application.
 
