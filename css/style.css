@@ -209,7 +209,7 @@ HOME MENU
 .homeMenu div {
     margin: 100px 30px 40px;
     width: 180px;
-    min-height: 120px;
+    height: 180px;
     display: block;
     text-align: center;
     background-color: #473E6E;
@@ -221,10 +221,6 @@ HOME MENU
     margin: 10px auto;
     height: 100px;
     width: 100px;
-    display: block;
-}
-
-.menuText {
     display: block;
 }
 
@@ -393,7 +389,6 @@ PITCH
 --------------------------*/
 
 .pitch-box {
-    display: block;
     background-image: url(../imgs/galaxy-pitch.jpeg);
     background-size: 100% 100%;
     min-height: 80vh;
@@ -436,7 +431,6 @@ PROFILES
 --------------------------*/
 
 .profileSection {
-    display: block;
     padding-top: 15px;
     background-image: url(../imgs/stars-background.jpg);
     background-repeat: repeat;
