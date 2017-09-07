@@ -4,10 +4,10 @@ import _ from 'lodash';
 const PlanetDetails = (props) => {
     
     function randomImage () {
-        const imgArr = [    <img alt="planet-photo" src="../imgs/pic1.jpeg"></img>,
-                            <img alt="planet-photo" src="../imgs/pic2.jpeg"></img>,
-                            <img alt="planet-photo" src="../imgs/pic4.jpg"></img>,
-                            <img alt="planet-photo" src="../imgs/pic5.jpg"></img>
+        const imgArr = [    <img alt="planet-photo" src="./imgs/pic1.jpeg"></img>,
+                            <img alt="planet-photo" src="./imgs/pic2.jpeg"></img>,
+                            <img alt="planet-photo" src="./imgs/pic4.jpg"></img>,
+                            <img alt="planet-photo" src="./imgs/pic5.jpg"></img>
                         ];   
         return (
             imgArr[Math.floor(Math.random() * (imgArr.length))]

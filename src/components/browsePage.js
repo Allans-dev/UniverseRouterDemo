@@ -9,12 +9,12 @@ const browsePage = (props) => {
                 <div className="browseDisplay">
                     <div className="topBar">
                         <span className="left">{props.number} planets available</span>
-                        <span className="right"><Link to="/">Back</Link></span>
+                        <span className="right"><Link to="/realuniverse/">Back</Link></span>
                     </div>
                     <PlanetDetails data={props.data} />
                     <div className="botBar">
                         <span className="left">realuniverse.com</span>
-                        <span className="right"><Link to="/">Back</Link></span>
+                        <span className="right"><Link to="/realuniverse/">Back</Link></span>
                     </div>
                 </div>
             </div>
