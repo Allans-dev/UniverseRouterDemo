@@ -260,6 +260,11 @@ FOOTER
     margin-left: 20px;
 }
 
+.footer-nav li:first-of-type, 
+.footer-social li:first-of-type {
+    margin-left: 0;
+}
+
 .footer-social {
     width: 40%;
     text-align: left;

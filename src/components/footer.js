@@ -6,8 +6,8 @@ const Footer = () => {
             <div className="row">
                 
                 <div className="downloadApp">
-                    <a target="_blank" href="#"><img alt="playstore" src="../../imgs/google-play-badge.png" /></a>
-                    <a target="_blank" href="#"><img alt="appstore" src="../../imgs/appleDL.svg" /></a>
+                    <a target="_blank" href="#"><img alt="playstore" src="./imgs/google-play-badge.png" /></a>
+                    <a target="_blank" href="#"><img alt="appstore" src="./imgs/appleDL.svg" /></a>
                 </div>  
                 
                 <div className="footer-social">
