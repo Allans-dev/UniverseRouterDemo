@@ -12,7 +12,7 @@ class BrowseRegion extends Component {
     componentWillMount(){
         
         const region = _.omitBy(this.props.planets.list, function (value, key){
-            if (value.star_distance < 50 || value.star_distance > 200) {
+            if (value.star_distance > 200) {
                 return value;
             }
         });
