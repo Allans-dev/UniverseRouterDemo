@@ -388,10 +388,42 @@ DETAILS COMPONENT
 PITCH
 --------------------------*/
 
-.pitch {
+.pitch-box {
     background-image: url(../imgs/galaxy-pitch.jpeg);
     background-size: 100% 100%;
     min-height: 80vh;
+    padding-top: 50px;
+}
+
+.pitch {
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+    font-size: 140%;
+    font-weight: 300;
+}
+
+.pitch div {
+    display: inline-block;
+    width: 40%;
+    margin: 10px 10px;
+    letter-spacing: 3px;
+}
+
+.world {
+    text-align: right;
+}
+
+.views,
+.location,
+.experience {
+    text-align: left;
+}
+
+.life {
+    padding: 40px;
+    color: #262626;
+    font-size: 200%;
 }
 
 /*-------------------------
@@ -400,6 +432,8 @@ PROFILES
 
 .profileSection {
     padding-top: 15px;
+    background-image: url(../imgs/stars-background.jpg);
+    background-repeat: repeat;
 }
 
 .profileSection h2{
@@ -460,8 +494,9 @@ PROFILES
     position: absolute;
     max-width: 30%;
     top: 60px;
-    background-color: rgba(0, 0, 0, 0.53);
+    background-color: rgba(255, 255, 255, 0.53);
     padding: 15px;
+    color: #262626;
 }
 
 .profile1 p,
@@ -472,9 +507,3 @@ PROFILES
 .profile2 p{
     left: 10%;
 }
-
-.profile1 { background-color: rgba(68, 73, 133, 0.75); }
-
-.profile2 { background-color: rgba(107, 63, 123, 0.75); }
-
-.profile3 { background-color: rgba(71, 62, 110, 0.75); }

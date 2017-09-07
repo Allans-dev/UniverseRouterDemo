@@ -1,31 +1,20 @@
 import React from 'react';
-import WayPoint from 'react-waypoint';
-import typer from 'typer-js';
+import { Link } from 'react-router-dom';
 
 const Pitch = () => {
     
-//    let trigger = 0;
-//    
-//    function updateTrigger () {
-//        trigger = 1;
-//    }
-    
-//    function triggerTyper () {
-//        if (trigger === 1){
-//            return ''
-//        }
-//    }
-    
-    typer('.pitch')
-      .line('This function roolz.')
-      .back(5)
-      .continue('ules!')
-            
-    
     return (
         <div className="row">
-            <div className="pitch">
-                    
+            <div className="pitch-box">
+                <div className="pitch">
+                    <div className="world">Out of this world:</div>
+                    <div className="views">Views</div>
+                    <div></div>
+                    <div className="location">Location</div>
+                    <div></div>
+                    <div className="experience">Experience</div>
+                    <div className="life"><Link to='/browseNeighbours'>Life</Link></div>
+                </div>
             </div>
         </div>
         

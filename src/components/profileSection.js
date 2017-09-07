@@ -19,7 +19,7 @@ const ProfileSection = (props) => {
             <div className=" profiles profile3">
                 <img className="woman2" src='../../imgs/woman2.png'></img>
                 <img className="banner-left" src='../../imgs/profile_banner.png'></img>
-                <span>Sophie Wong: Liveability Analyst</span>
+                <span>Sophie Wong: Livability Analyst</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque feugiat leo ac cursus aliquet. Nullam felis neque, varius et feugiat at, congue vel ex. Morbi luctus nisl et faucibus ornare. Duis sit amet feugiat eros. Vestibulum interdum lorem velit, sed laoreet augue scelerisque sed. Aenean in urna sed nibh euismod fringilla mollis non neque.</p>
             </div>
         </div>
