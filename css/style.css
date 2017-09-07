@@ -13,6 +13,7 @@ GLOBAL
     light blue #2972FF
     purple #473E6E
     text white #c4c4c4
+    black #262626
     unobtrusive grey #848484;
 */
 
@@ -66,7 +67,7 @@ TITLE
 -------------------------*/
 
 .title {
-    height: 98vh;
+    min-height: 98vh;
     width: 100%;
     background-image: url(../imgs/sun-earth-shadow.jpg);
     background-size: 100% 100%;
@@ -166,16 +167,20 @@ SEARCH BAR
 --------------------------*/
 
 .searchBar {
+    margin: 0 auto;
     margin-top: 30px;
     text-align: center;
-    font-size: 100%;
+    width: 40%;
+    padding: 15px;
 }
 
 .searchBar input {
     font-size: 100%;
     margin-right: 10px;
-    width: 30%;
+    width: 80%;
     border-radius: 5px;
+    height: 30px;
+    background-color: rgba(238, 238, 238, 0.8);
 }
 
 .searchBar button {
@@ -226,6 +231,7 @@ FOOTER
 .footer {
     width: 100%;
     color: #848484;
+    padding-top: 60px;
 }
 
 .downloadApp {
@@ -279,6 +285,7 @@ FOOTER
 .footer-social li .fa-google-plus:hover { color: #dd4b39; }
 
 .footer-notes {
+    margin-top: 15px;
     font-size: 70%;
     width: 100%;
     text-align: center;
@@ -303,7 +310,6 @@ BROWSE
     width: 80%;
     min-height: 600px;
     background-color: rgba(238, 238, 238, 0.7);
-    padding-bottom: 30px;
 }
 
 .topBar {
@@ -314,6 +320,17 @@ BROWSE
     width: 90%;
     margin: 0 auto;
     margin-bottom: 15px;
+    font-size: 130%;
+}
+
+.botBar {
+    position: relative;
+    border-top: 3px solid black;
+    padding: 10px 0 15px 0;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
     font-size: 130%;
 }
 
@@ -366,3 +383,98 @@ DETAILS COMPONENT
 .rentBtn {
     background-color: #e38415;
 }
+
+/*-------------------------
+PITCH
+--------------------------*/
+
+.pitch {
+    background-image: url(../imgs/galaxy-pitch.jpeg);
+    background-size: 100% 100%;
+    min-height: 80vh;
+}
+
+/*-------------------------
+PROFILES
+--------------------------*/
+
+.profileSection {
+    padding-top: 15px;
+}
+
+.profileSection h2{
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 300%;
+    font-weight: 300;
+}
+
+.profiles {
+    position: relative;
+    min-height: 320px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.man1,
+.woman1,
+.woman2 {
+    max-height: 300px;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+}
+
+.woman1 { right: 0; }
+
+.banner-left,
+.banner-right {
+    max-height: 100px;
+    max-width: 60%;
+    position: absolute;
+    bottom: 0;
+    z-index: 50;
+}
+
+.banner-left { left: 0; }
+
+.banner-right { right: 0; }
+
+.profiles span {
+    position: absolute;
+    z-index: 100;
+    bottom: 24px;
+    color: #262626;
+    font-size: 140%;
+}
+
+.profile1 span,
+.profile3 span{
+    left: 28%;
+}
+
+.profile2 span { right: 28%; }
+
+.profiles p{
+    position: absolute;
+    max-width: 30%;
+    top: 60px;
+    background-color: rgba(0, 0, 0, 0.53);
+    padding: 15px;
+}
+
+.profile1 p,
+.profile3 p{
+    right: 10%;
+}
+
+.profile2 p{
+    left: 10%;
+}
+
+.profile1 { background-color: rgba(68, 73, 133, 0.75); }
+
+.profile2 { background-color: rgba(107, 63, 123, 0.75); }
+
+.profile3 { background-color: rgba(71, 62, 110, 0.75); }

@@ -5,7 +5,7 @@ import configureStore from './store';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/navbar.js';
-import Title from './components/title.js';
+import Home from './components/home.js';
 import BrowseAll from './containers/browseAll.js';
 import BrowseNeighbours from './containers/browseNeighbours.js';
 import BrowseRegion from './containers/browseRegion.js';
@@ -28,7 +28,7 @@ ReactDOM.render(
                     <Route path="/browseNeighbours" component={BrowseNeighbours} />
                     <Route path="/browseRegion" component={BrowseRegion} />
                     <Route path="/browseAll" component={BrowseAll} />
-                    <Route path="/" component={Title} />
+                    <Route path="/" component={Home} />
                 </Switch>
                 <Footer />
             </div>

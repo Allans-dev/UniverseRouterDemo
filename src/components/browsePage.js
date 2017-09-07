@@ -12,6 +12,10 @@ const browsePage = (props) => {
                         <span className="right"><Link to="/">Back</Link></span>
                     </div>
                     <PlanetDetails data={props.data} />
+                    <div className="botBar">
+                        <span className="left">realuniverse.com</span>
+                        <span className="right"><Link to="/">Back</Link></span>
+                    </div>
                 </div>
             </div>
         </div>
