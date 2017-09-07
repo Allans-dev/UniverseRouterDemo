@@ -6,21 +6,21 @@ const HomeMenu = () => {
     return (
         <div className="homeMenu">
             <div>
-                <Link to="/browseNeighbours">
+                <Link to="/realuniverse/browseNeighbours">
                     <img alt="earth-and-moon-icon" src="imgs/earth-and-moon.png"></img> 
                     Neighbourhood<br/>
                     (less than 50 parsecs)
                 </Link>
             </div>
             <div>
-                <Link to="/browseRegion">
+                <Link to="/realuniverse/browseRegion">
                     <img alt="solar-system-icon" src="imgs/solar-system.png"></img> 
                     Regional<br/>
                     (less than 200 parsecs)
                 </Link>
             </div>
             <div>
-                <Link to="/browseAll">
+                <Link to="/realuniverse/browseAll">
                     <img alt="galaxy-icon" src="imgs/galaxy-view.png"></img> 
                     All
                 </Link>
