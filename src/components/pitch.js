@@ -13,7 +13,7 @@ const Pitch = () => {
                     <div className="location">Location</div>
                     <div></div>
                     <div className="experience">Experience</div>
-                    <div className="life"><Link to='/realuniverse/browseNeighbours'>Life</Link></div>
+                    <div className="life"><Link to='/browseNeighbours'>Life</Link></div>
                 </div>
             </div>
         </div>

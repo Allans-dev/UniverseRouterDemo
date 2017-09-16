@@ -25,10 +25,10 @@ ReactDOM.render(
             <div>
                 <Navbar />
                 <Switch>
-                    <Route path="/realuniverse/browseNeighbours" component={BrowseNeighbours} />
-                    <Route path="/realuniverse/browseRegion" component={BrowseRegion} />
-                    <Route path="/realuniverse/browseAll" component={BrowseAll} />
-                    <Route path="/realuniverse/" component={Home} />
+                    <Route path="/browseNeighbours" component={BrowseNeighbours} />
+                    <Route path="/browseRegion" component={BrowseRegion} />
+                    <Route path="/browseAll" component={BrowseAll} />
+                    <Route path="/" component={Home} />
                 </Switch>
                 <Footer />
             </div>
