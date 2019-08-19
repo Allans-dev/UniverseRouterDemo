@@ -19,6 +19,14 @@ store.subscribe(() => {
     console.log('index: ', store.getState());
 });
 
+function envCheck() {
+  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+        return <Route exact path="/" component={Home} />
+      } else {
+        return <Route exact path="/UniverseRouterDemo" component={Home} />
+      }
+}
+
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
@@ -28,7 +36,7 @@ ReactDOM.render(
                     <Route path="/browseNeighbours" component={BrowseNeighbours} />
                     <Route path="/browseRegion" component={BrowseRegion} />
                     <Route path="/browseAll" component={BrowseAll} />
-                    <Route path="/" component={Home} />
+                    {envCheck()}   
                 </Switch>
                 <Footer />
             </div>
